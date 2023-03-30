@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
 
     <!-- Vendor CSS Files -->
     <link
@@ -47,7 +51,7 @@
               <i class="bi bi-search"></i>
             </a>
           </li>
-          <li class="nav-item dropdown pe-3">
+          <li class="nav-item dropdown p-5">
             <a
               class="nav-link nav-profile d-flex align-items-center pe-0"
               href="#"
@@ -252,73 +256,401 @@
     </aside>
     <!-- End Sidebar-->
     <main id="main" class="main">
-      <!-- End Page Title -->
-
-      <div class="pagetitle">
-        <h1>General Tables</h1>
-        <nav>
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item">Tables</li>
-            <li class="breadcrumb-item active">General</li>
-          </ol>
-        </nav>
-      </div>
-      <!-- End Page Title -->
-
       <section class="section">
         <div class="row">
-          <div class="col">
+          <div class="col-lg">
             <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Table with hoverable rows</h5>
-
+              <div class="card-body mt-4">
+                <div class="d-flex justify-content-between">
+                  <p class="card-title justify-content-center">
+                    Time Sheet Listing
+                  </p>
+                  <div class="search-container">
+                    <form action="">
+                      <div class="d-flex">
+                        <input
+                          type="date"
+                          name="start_date"
+                          class="form-control"
+                        />
+                        <input
+                          type="date"
+                          name="end_date"
+                          class="ms-2 form-control"
+                        />
+                        <select
+                          name="company_id"
+                          class="ms-2 form-control form-select"
+                          id=" company_feedback"
+                        >
+                          <option value="">Select company</option>
+                          <option value="">Afsar</option>
+                        </select>
+                        <select
+                          name="company_id"
+                          class="ms-2 form-control form-select"
+                          id=" company_feedback"
+                        >
+                          <option value="">Select Client</option>
+                          <option value="">Afsar</option>
+                        </select>
+                        <select
+                          name="company_id"
+                          class="ms-2 form-control form-select"
+                          id=" company_feedback"
+                        >
+                          <option value="">Select Employee</option>
+                          <option value="">Afsar</option>
+                        </select>
+                        <button
+                          style="background-color: #4b49ac; color: white"
+                          type="button "
+                          class="ms-2 btn rounded"
+                        >
+                          search
+                        </button>
+                        <button
+                          style="background-color: #4b49ac; color: white"
+                          class="ms-2 btn rounded"
+                          type="button"
+                        >
+                          Reset
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
                 <!-- Table with hoverable rows -->
-                <table class="table table-hover">
+                <table class="table table-responsive">
                   <thead>
                     <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">Name</th>
-                      <th scope="col">Position</th>
-                      <th scope="col">Age</th>
-                      <th scope="col">Start Date</th>
+                      <th scope="col">Sr No.</th>
+                      <th scope="col">Employee</th>
+                      <th scope="col">company</th>
+                      <th scope="col">Client</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Actual In/Out</th>
+                      <th scope="col">Punch In</th>
+                      <th scope="col">Punch Out</th>
+                      <th scope="col">Working Hours</th>
+                      <th scope="col">Break Hours</th>
+                      <th scope="col">Authorized By</th>
+                      <th scope="col">Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">1</th>
+                      <td scope="row">1</td>
                       <td>Brandon Jacob</td>
                       <td>Designer</td>
                       <td>28</td>
                       <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-light"
+                            id="dropdownMenuButton2"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="bi bi-list-ul"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="view.html">
+                                <i class="bi bi-eye-fill me-3"></i>
+                                <span>View</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="copy.html">
+                                <i class="fas fa-copy    "></i> 
+                                <span>Copy</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="pdf.html">
+                                <i class="fas fa-download me-3"></i>
+                                <span>Download</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="pdf.html">
+                                <i class="fas fa-file-pdf me-3"></i>
+                                <span>Pdf</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                                type="button"
+                              >
+                                <i class="fas fa-edit me-3"></i>
+                                <span>Edit</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
-                      <th scope="row">2</th>
+                      <td scope="row">2</td>
                       <td>Bridie Kessler</td>
                       <td>Developer</td>
                       <td>35</td>
                       <td>2014-12-05</td>
+                      <td>2016-05-25/td></td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-light"
+                            id="dropdownMenuButton2"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="bi bi-list-ul"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="view.html">
+                                <i class="bi bi-eye-fill me-3"></i>
+                                <span>View</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="copy.html">
+                                <i class="fas fa-copy me-3"></i>
+                                <span>Copy</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="pdf.html">
+                                <i class="fas fa-download me-3"></i>
+                                <span>Download</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="pdf.html">
+                                <i class="fas fa-file-pdf me-3"></i>
+                                <span>Pdf</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                                type="button"
+                              >
+                                <i class="fas fa-edit me-3"></i>
+                                <span>Edit</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
-                      <th scope="row">3</th>
+                      <td scope="row">3</td>
                       <td>Ashleigh Langosh</td>
                       <td>Finance</td>
                       <td>45</td>
                       <td>2011-08-12</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-light"
+                            id="dropdownMenuButton2"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="bi bi-list-ul"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="view.html">
+                                <i class="bi bi-eye-fill me-3"></i>
+                                <span>View</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="copy.html">
+                                <i class="fas fa-copy me-3"></i>
+                                <span>Copy</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="pdf.html">
+                                <i class="fas fa-download me-3"></i>
+                                <span>Download</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="pdf.html">
+                                <i class="fas fa-file-pdf me-3"></i>
+                                <span>Pdf</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                                type="button"
+                              >
+                                <i class="fas fa-edit me-3"></i>
+                                <span>Edit</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
-                      <th scope="row">4</th>
+                      <td scope="row">4</td>
                       <td>Angus Grady</td>
                       <td>HR</td>
                       <td>34</td>
                       <td>2012-06-11</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-light"
+                            id="dropdownMenuButton2"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="bi bi-list-ul"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="view.html">
+                                <i class="bi bi-eye-fill me-3"></i>
+                                <span>View</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="copy.html">
+                                <i class="fas fa-copy me-3"></i>
+                                <span>Copy</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="pdf.html">
+                                <i class="fas fa-download me-3"></i>
+                                <span>Download</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="pdf.html">
+                                <i class="fas fa-file-pdf me-3"></i>
+                                <span>Pdf</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                                type="button"
+                              >
+                                <i class="fas fa-edit me-3"></i>
+                                <span>Edit</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
-                      <th scope="row">5</th>
+                      <td scope="row">5</td>
                       <td>Raheem Lehner</td>
                       <td>Dynamic Division Officer</td>
                       <td>47</td>
                       <td>2011-04-19</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-light"
+                            id="dropdownMenuButton2"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="bi bi-list-ul"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="view.html">
+                                <i class="bi bi-eye-fill me-3"></i>
+                                <span>View</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="copy.html">
+                                <i
+                                  <i class="fas fa-copy    
+                                  aria-hidden="true"></i>
+                                </i>
+                                <span>Copy</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="pdf.html">
+                                <i class="fas fa-download me-3"></i>
+                                <span>Download</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="pdf.html">
+                                <i class="fas fa-file-pdf me-3"></i>
+                                <span>Pdf</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                                type="button"
+                              >
+                                <i class="fas fa-edit me-3"></i>
+                                <span>Edit</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -351,506 +683,3 @@
   </body>
 </html>
 
-<!-- <div class="col-10 mt-5 ">
-                <div class="row">
-                    <div class="col-lg-12 ">
-                        <div class="card ms-3 me-3">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <p class="card-title justify-content-center mt-3">Time Sheet Listing</p>
-                                     <div class="search-container"> 
-                                    <form action="">
-                                        <div class="d-flex align-items-center ">
-                                            <input type="date" name="start_date" class="form-control m-2 p-3">
-                                            <input type="date" name="end_date" class="form-control m-2 p-3">
-                                            <select name="company_id" class="form-control form-select p-3 m-2 w-50"
-                                                id=" company_feedback">
-                                                <option value="">Select company</option>
-                                                <option value="">Afsar</option>
-
-                                            </select>
-                                            <select name="company_id" class="form-control form-select p-3 m-2 "
-                                                id=" company_feedback">
-                                                <option value="">Select Client</option>
-                                                <option value="">Afsar</option>
-                                            </select>
-                                            <select name="company_id" class="form-control form-select p-3 m-2 w-50"
-                                                id=" company_feedback">
-                                                <option value="">Select Employee</option>
-                                                <option value="">Afsar</option>
-                                            </select>
-                                                <button style="background-color: #4b49ac; color: white;"
-                                                    type="button " class=" btn  rounded-end p-3 w-25 ">search</button>
-                                                <button style="background-color: #4b49ac ; color:white"
-                                                    class="ms-2 btn  rounded  me-3 p-3 w-25" type="button">Reset</button>
-                                            </div>
-
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="row mt-2">
-                                <div class="col-12 vh-100">
-                                    <div class="table-responsive ms-3 me-3 rounded">
-                                        <table id="example" class="table display expandable-table  "
-                                            style="width: 100%;">
-                                            <thead class="employee-table-header w-auto">
-                                                <tr>
-                                                    <th>Sr No.</th>
-                                                    <th>Employee</th>
-                                                    <th>Company</th>
-
-                                                    <th>Client</th>
-                                                    <th>Date</th>
-
-                                                    <th>Actual Check In</th>
-                                                    <th>Actual Check Out</th>
-
-                                                    <th>Punch In</th>
-                                                    <th>Punch Out</th>
-                                                    <th>Working Hours</th>
-                                                    <th>Break Hours</th>
-                                                    <th>Authorized By</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-
-                                                <tr>
-                                                    <td>1
-                                                    </td>
-                                                    <td>Anna Shrivastava
-                                                    </td>
-                                                    <td>Anna Emirates Ltd.</td>
-
-                                                    <td>Anna Airlines</td>
-                                                    <td>2023-03-17</td>
-
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>N/A</td>
-                                                    <td>
-                                                        <div class="dropdown ">
-                                                            <button class=" btn btn-primary " id="dropdownMenuButton2"
-                                                                data-bs-toggle="dropdown" aria-expanded="false"
-                                                                style="background-color: #4b49ac; color: white;">
-                                                                <i class="bi bi-list-ul"></i>
-                                                            </button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item " href="view.html">
-                                                                        <i class=" bi bi-eye-fill me-3"></i>
-                                                                        <span>View</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item " href="copy.html">
-                                                                        <i class="fas fa-copy  me-3"></i>
-                                                                        <span>Copy</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item " href="pdf.html">
-                                                                        <i class="fas fa-download  me-3"></i>
-                                                                        <span>Download</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item " href="pdf.html">
-                                                                        <i class="fas fa-file-pdf me-3"></i>
-                                                                        <span>Pdf</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                                        data-bs-target="#exampleModal" type="button">
-                                                                        <i class="fas fa-edit  me-3"></i>
-                                                                        <span>Edit</span>
-
-                                                                    </a>
-
-                                                                </li>
-
-                                                            </ul>
-                                                        </div>
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1
-                                                    </td>
-                                                    <td>Anna Shrivastava
-                                                    </td>
-                                                    <td>Anna Emirates Ltd.</td>
-
-                                                    <td>Anna Airlines/td>
-                                                    <td>2023-03-17</td>
-
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>N/A</td>
-                                                    <td>
-                                                        <div class="dropdown ">
-                                                            <button class=" btn btn-primary " id="dropdownMenuButton2"
-                                                                data-bs-toggle="dropdown" aria-expanded="false"
-                                                                style="background-color: #4b49ac; color: white;">
-                                                                <i class="bi bi-list-ul"></i>
-                                                            </button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item " href="view.html">
-                                                                        <i class=" bi bi-eye-fill me-3"></i>
-                                                                        <span>View</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item " href="copy.html">
-                                                                        <i class="fas fa-copy  me-3"></i>
-                                                                        <span>Copy</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item " href="pdf.html">
-                                                                        <i class="fas fa-download  me-3"></i>
-                                                                        <span>Download</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item " href="pdf.html">
-                                                                        <i class="fas fa-file-pdf me-3"></i>
-                                                                        <span>Pdf</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                                        data-bs-target="#exampleModal" type="button">
-                                                                        <i class="fas fa-edit  me-3"></i>
-                                                                        <span>Edit</span>
-
-                                                                    </a>
-
-                                                                </li>
-
-                                                            </ul>
-                                                        </div>
-
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1
-                                                    </td>
-                                                    <td>Anna Shrivastava
-                                                    </td>
-                                                    <td>Anna Emirates Ltd.</td>
-
-                                                    <td>Anna Airlinestd>
-                                                    <td>2023-03-17</td>
-
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>N/A</td>
-                                                    <td>
-                                                        <div class="dropdown ">
-                                                            <button class=" btn btn-primary " id="dropdownMenuButton2"
-                                                                data-bs-toggle="dropdown" aria-expanded="false"
-                                                                style="background-color: #4b49ac; color: white;">
-                                                                <i class="bi bi-list-ul"></i>
-                                                            </button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item " href="view.html">
-                                                                        <i class=" bi bi-eye-fill me-3"></i>
-                                                                        <span>View</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item " href="copy.html">
-                                                                        <i class="fas fa-copy  me-3"></i>
-                                                                        <span>Copy</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item " href="pdf.html">
-                                                                        <i class="fas fa-download  me-3"></i>
-                                                                        <span>Download</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item " href="pdf.html">
-                                                                        <i class="fas fa-file-pdf me-3"></i>
-                                                                        <span>Pdf</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                                        data-bs-target="#exampleModal" type="button">
-                                                                        <i class="fas fa-edit  me-3"></i>
-                                                                        <span>Edit</span>
-
-                                                                    </a>
-
-                                                                </li>
-
-                                                            </ul>
-                                                        </div>
-
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1
-                                                    </td>
-                                                    <td>Anna Shrivastava
-                                                    </td>
-                                                    <td>Anna Emirates Ltd.</td>
-
-                                                    <td>Anna Airlines/td>
-                                                    <td>2023-03-17</td>
-
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>N/A</td>
-                                                    <td>
-                                                        <div class="dropdown ">
-                                                            <button class=" btn btn-primary " id="dropdownMenuButton2"
-                                                                data-bs-toggle="dropdown" aria-expanded="false"
-                                                                style="background-color: #4b49ac; color: white;">
-                                                                <i class="bi bi-list-ul"></i>
-                                                            </button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item " href="view.html">
-                                                                        <i class=" bi bi-eye-fill me-3"></i>
-                                                                        <span>View</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item " href="copy.html">
-                                                                        <i class="fas fa-copy  me-3"></i>
-                                                                        <span>Copy</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item " href="pdf.html">
-                                                                        <i class="fas fa-download  me-3"></i>
-                                                                        <span>Download</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item " href="pdf.html">
-                                                                        <i class="fas fa-file-pdf me-3"></i>
-                                                                        <span>Pdf</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                                        data-bs-target="#exampleModal" type="button">
-                                                                        <i class="fas fa-edit  me-3"></i>
-                                                                        <span>Edit</span>
-
-                                                                    </a>
-
-                                                                </li>
-
-                                                            </ul>
-                                                        </div>
-
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1
-                                                    </td>
-                                                    <td>Anna Shrivastava
-                                                    </td>
-                                                    <td>Anna Emirates Ltd.</td>
-
-                                                    <td>Anna Airlines</td>
-                                                    <td>2023-03-17</td>
-
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>N/A</td>
-                                                    <td>
-                                                        <div class="dropdown ">
-                                                            <button class=" btn btn-primary " id="dropdownMenuButton2"
-                                                                data-bs-toggle="dropdown" aria-expanded="false"
-                                                                style="background-color: #4b49ac; color: white;">
-                                                                <i class="bi bi-list-ul"></i>
-                                                            </button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item " href="view.html">
-                                                                        <i class=" bi bi-eye-fill me-3"></i>
-                                                                        <span>View</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item " href="copy.html">
-                                                                        <i class="fas fa-copy  me-3"></i>
-                                                                        <span>Copy</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item " href="pdf.html">
-                                                                        <i class="fas fa-download  me-3"></i>
-                                                                        <span>Download</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item " href="pdf.html">
-                                                                        <i class="fas fa-file-pdf me-3"></i>
-                                                                        <span>Pdf</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                                        data-bs-target="#exampleModal" type="button">
-                                                                        <i class="fas fa-edit  me-3"></i>
-                                                                        <span>Edit</span>
-
-                                                                    </a>
-
-                                                                </li>
-
-                                                            </ul>
-                                                        </div>
-
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1
-                                                    </td>
-                                                    <td>Anna Shrivastava
-                                                    </td>
-                                                    <td>Anna Emirates Ltd.</td>
-
-                                                    <td>Anna Airlinesr</td>
-                                                    <td>2023-03-17</td>
-
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>20:01</td>
-                                                    <td>N/A</td>
-                                                    <td>
-                                                        <div class="dropdown ">
-                                                            <button class=" btn btn-primary " id="dropdownMenuButton2"
-                                                                data-bs-toggle="dropdown" aria-expanded="false"
-                                                                style="background-color: #4b49ac; color: white;">
-                                                                <i class="bi bi-list-ul"></i>
-                                                            </button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item " href="view.html">
-                                                                        <i class=" bi bi-eye-fill me-3"></i>
-                                                                        <span>View</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item " href="copy.html">
-                                                                        <i class="fas fa-copy  me-3"></i>
-                                                                        <span>Copy</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item " href="pdf.html">
-                                                                        <i class="fas fa-download  me-3"></i>
-                                                                        <span>Download</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item " href="pdf.html">
-                                                                        <i class="fas fa-file-pdf me-3"></i>
-                                                                        <span>Pdf</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                                        data-bs-target="#exampleModal" type="button">
-                                                                        <i class="fas fa-edit  me-3"></i>
-                                                                        <span>Edit</span>
-
-                                                                    </a>
-
-                                                                </li>
-
-                                                            </ul>
-                                                        </div>
-
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-    </div>
-    </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-title fs-5 p-3" id="exampleModalLabel">Time Sheet</p>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row p-3">
-                        <div class="col ">
-                            <div> Employee Name:</div>
-                            <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
-                            <div class="input-group-prepend">
-                                <div class="input-group-text p-2 mt-2">Anamika </div>
-                            </div>
-
-                            <div class="mt-3"> Client:</div>
-                            <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
-                            <div class="input-group-prepend">
-                                <div class="input-group-text mt-2  p-2">Anamika </div>
-                            </div>
-                            <div class=" mt-3"> Punch In:</div>
-                            <label class="sr-only" for="inlineFormInputName"></label>
-                            <input type="datetime" class="form-control w-100 p-2 mt-2" id="inlineFormInputName"
-                                placeholder="">
-                        </div>
-                        <div class="col">
-                            <div> Company:</div>
-                            <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
-                            <div class="input-group-prepend">
-                                <div class="input-group-text p-2 mt-2">Abcd </div>
-                            </div>
-
-                            <div class="mt-3"> Client Branch:</div>
-                            <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
-                            <div class="input-group-prepend">
-                                <div class="input-group-text p-2 mt-2">Flying</div>
-                            </div>
-                            <div class=" mt-3"> Punch Out:</div>
-                            <label class="sr-only" for="inlineFormInputName">Name</label>
-                            <input type="datetime" class="form-control w-100 p-2 mt-3" id="inlineFormInputName"
-                                placeholder="">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer p-3">
-                    <button type="button" class="btn btn-secondary p-2 w-25" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success p-2 w-25">Print</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-        function openNav() {
-          document.getElementById("mySidebar").style.width = "250px";
-          document.getElementById("main").style.marginLeft = "250px";
-        }
-        
-        function closeNav() {
-          document.getElementById("mySidebar").style.width = "0";
-          document.getElementById("main").style.marginLeft= "0";
-        }
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-</body>
-
-</html> -->

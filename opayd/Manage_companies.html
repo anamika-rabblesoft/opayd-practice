@@ -1,218 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opayd</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="home.css" />
-</head>
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-lg">
-    <div class="container-fluid">
-      <a href="#" class="navbar-brand">
-        <img src="logo.jpeg " height="50" />
-      </a>  
-      <a href="" class="buttons" onclick="openNav()">☰ </a>
-      <div class="navbar-nav ms-auto">
-        <div class="dropdown">
-          <a href="dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"
-            style="justify-content: flex-end;">
-            <img class="header_img me-5" src="profile-img.jpg" alt="" height="30" />
-          </a>
-          <ul class="dropdown-menu  shadow border-0">
-            <li><a class="dropdown-item " href="#">
-                <i class="bi bi-person me-3"></i>
-                <span>Edit Profile</span>
-              </a>
-            </li>
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
 
-            <li><a class="dropdown-item" href="#">
-                <i class="bi bi-box-arrow-left me-3 "></i>
-                <span>Log Out</span>
-              </a></li>
-</ul>
-        </div>
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="logo.jpeg" alt="" />
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
       </div>
-    </div>
-    </div>
-  </nav>
-  <div class="container-fluid">
-    <div class="row min-vh-100">
-      <div class="col-lg-2 bg-white">
-        <UL>
-          <li class="nav-item mt-5 ">
-            <a class="nav-link" href="home.html">
-              <i class="bi bi-grid"></i>
-              <span>Dashboard</span>
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
             </a>
           </li>
-    <div class="select">
-          <li class="nav-item collapsed">
-            <a class="nav-link active" href="Manage_companies.html">
-              <i class="bi bi-people"></i>
-              <span>Manage Companies</span>
-            </a>
+          <li class="nav-item dropdown p-5">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="assets/img/profile-img.jpg"
+                alt="Profile"
+                class="rounded-circle"
+              /> </a
+            ><!-- End Profile Iamge Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-person"></i>
+                  <span>Edit Profile</span>
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Log Out</span>
+                </a>
+              </li>
+            </ul>
+            <!-- End Profile Dropdown Items -->
           </li>
-    </div>
-          <li class="nav-item collapsed">
-            <a class="nav-link" href="Manage_employess.html">
-              <i class="bi bi-people"></i>
-              <span>Manage Employees</span>
-            </a>
-          </li>
-          <li class="nav-item collapsed">
-            <a class="nav-link" href="">
-              <i class="bi bi-people"></i>
-              <span>Attendence Log</span>
-            </a>
-          </li>
-          <li class="nav-item collapsed">
-            <a class="nav-link" href="">
-              <i class="bi bi-person-fill"></i>
-              <span>Manage Clients</span>
-            </a>
-          </li>
-          <li class="nav-item collapsed">
-            <a class="nav-link" href="">
-              <img src="qr.jpg" height="15" />
-              <span class="ms-2">Manage QR-Codes</span>
-            </a>
-          </li>
-          <li class="nav-item collapsed">
-            <a class="nav-link" href="Manage_TimeSheet.HTML">
-              <img src="qr.jpg" height="15" />
-              <span class="ms-2">Manage Time Sheets</span>
-            </a>
-          </li>
-          <li class="nav-item collapsed">
-            <a class="nav-link" href="">
-              <img src="qr.jpg" height="15" />
-              <span class="ms-2">Manage Feedbacks</span>
-            </a>
-          </li>
-          <li class="nav-item collapsed">
-            <a class="nav-link" href="">
-              <img src="qr.jpg" height="15" />
-              <span class="ms-2">Manage Job Titles</span>
-            </a>
-          </li>
-          <li class="nav-item collapsed">
-            <a class="nav-link" href="">
-              <i class="bi bi-receipt"></i>
-              <span>Manage Invoices</span>
-            </a>
-          </li>
-          <li class="nav-item collapsed">
-            <a class="nav-link" href="">
-              <i class="bi bi-receipt"></i>
-              <span>Manage Reports</span>
-            </a>
-          </li>
-          <li class="nav-item collapsed">
-            <a class="nav-link" href="">
-              <i class="bi bi-receipt"></i>
-              <span>Timesheet Reports</span>
-            </a>
-          </li>
-          <li class="nav-item collapsed">
-            <a class="nav-link" href="">
-              <i class="bi bi-receipt"></i>
-              <span>Invoice Reports</span>
-            </a>
-          </li>
-          <li class="nav-item collapsed">
-            <a class="nav-link" href="">
-              <i class="bi bi-receipt"></i>
-              <span>Manage Settings</span>
-            </a>
-          </li>
-          <li class="nav-item collapsed">
-            <a class="nav-link" href="">
-              <i class="bi bi-clock-fill"></i>
-              <span>Manage Shifts</span>
-            </a>
-          </li>
+          <!-- End Profile Nav -->
         </ul>
-      </div>
-      <div class="col-lg-10 mt-5 ">
-        <div class="row">
-          <div class="col-12 ">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-        <p class="ms-3 justify-content-center">Manage Companies</p>
-       <a href="add new .html" class="button me-3 pt-3 pb-3 pe-3 ps-3"><i class="bi bi-plus-lg p-2"></i> Add New Company
-       </a>
-          </div>
-          </div>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="home.html">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <!-- End Dashboard Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#components-nav"
+            data-bs-toggle="collapse"
+            href="Manage_companies.html"
+          >
+            <i class="bi bi-people"></i><span>Manage Companies</span>
+          </a>
+
+          <!-- End Components Nav -->
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#forms-nav"
+            data-bs-toggle="collapse"
+            href="Manage_employess.html"
+          >
+            <i class="bi bi-people"></i><span>Manage Employees</span>
+          </a>
+
+          <!-- End Tables Nav -->
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#charts-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Attendance Log</span>
+          </a>
+        </li>
+        <!-- End Charts Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#icons-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-person-fill"></i><span>Manage Client</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#icons-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <img src="qr.jpg" height="15" /><span>Manage QR-Code</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#icons-nav"
+            data-bs-toggle="collapse"
+            href="Manage_TimeSheet.HTML"
+          >
+            <img src="qr.jpg" height="15" /><span>Time Sheets List</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#icons-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <img src="qr.jpg" height="15" /><span>Manage Feedbacks</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#icons-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <img src="qr.jpg" height="15" /><span>Manage Job Titles</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#icons-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-receipt"></i><span>Manage Invoice</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#icons-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-receipt"></i><span>Manage Report</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#icons-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-receipt"></i><span>Timesheet Report</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#icons-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-receipt"></i><span>Invoice Report</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#icons-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-receipt"></i><span>Manage Settings</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#icons-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-clock-fill"></i><span>Manage Shifts</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+    <main id="main" class="main">
+      <div class="d-flex justify-content-between mb-3">
+        <p class="card-title justify-content-center">Manage Companies</p>
+        <div class="text-center">
+          <a href="add new .html" class="button btn btn-light p-3">
+            <i class="bi bi-plus-lg p-2"></i>Add New Company
+          </a>
         </div>
+      </div>
+      <section class="section">
         <div class="row">
-          <div class="col-12 ">
-            <div class="card ms-3 me-3 ">
-              <div class="card-body ">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="card-title justify-content-center ms-3 mt-3">Company Listing</p>
+          <div class="col-lg">
+            <div class="card">
+              <div class="card-body mt-4">
+                <div class="d-flex justify-content-between">
+                  <p class="card-title justify-content-center">
+                    Company Listing
+                  </p>
+
                   <div class="search-container">
-                    <form action="/action_page.php">
-                      <div class="input-group">
-                        <input type="" class="form-control p-3 " placeholder="search with company name" aria-label="Search"
-                          aria-describedby="search-addon" />
-                        <button type="button " class=" btn rounded-end ">search</button>
-                        <button class="ms-2 btn rounded w-25" type="submit">Reset</button>
+                    <form action="">
+                      <div class="d-flex">
+                        <button
+                          style="background-color: #4b49ac; color: white"
+                          type="button "
+                          class="ms-2 btn rounded"
+                        >
+                          search
+                        </button>
+                        <button
+                          style="background-color: #4b49ac; color: white"
+                          class="ms-2 btn rounded"
+                          type="button"
+                        >
+                          Reset
+                        </button>
                       </div>
                     </form>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-12">
-                    <div class="table-responsive  rounded">
-                      <table id="example" class="table display expandable-table"
-                          style="width:100%">
-                          <thead class="employee-table-header">
-                        <tr class="">
-                          <th>Company logo</th>
-                          <th>Company Name</th>
-                          <th>Company User</th>
-                          <th>Company Address</th>
-                          <th>City</th>
-                          <th>Postcode</th>
-                          <th>Created at</th>
-                          <th>Action</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="mt-4 justify-content-between">
-                          <td>
-                            <img class="rounded-circle justify-content-center" src="profile-img.jpg" height="35">
-                          </td>
-                          <td>Opayd</td>
-                          <td>Anamika</td>
-                          <td>ABCD</td>
-                          <td>Ludhiana</td>
-                          <td>025634</td>
-                          <td>09-03-2023</td>
-                          <td>
-                            <a href="" class="btn btn btn-info"><i class="bi bi-pencil-square"></i></a>
-                            <a href="" class="btn btn-primary "> Deactivate
-                            </a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
+                <!-- Table with hoverable rows -->
+                <table class="table table-responsive">
+                  <thead>
+                    <tr>
+                      <th scope="col">Company Logo</th>
+                      <th scope="col">Company Name</th>
+                      <th scope="col">User</th>
+                      <th scope="col">Address</th>
+                      <th scope="col">City</th>
+                      <th scope="col">Postcode</th>
+                      <th scope="col">Created at</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">1</td>
+                      <td>Brandon Jacob</td>
+                      <td>Designer</td>
+                      <td>28</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+
+                      <td>
+                        <a href="" class="btn btn-light"
+                          ><i class="bi bi-pencil-square"></i
+                        ></a>
+                        <a href="" class="btn btn-light"> Deactivate </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">2</td>
+                      <td>Bridie Kessler</td>
+                      <td>Developer</td>
+                      <td>35</td>
+                      <td>2014-12-05</td>
+                      <td>2016-05-25/td></td>
+                      <td>2016-05-25/td></td>
+                      <td>
+                        <a href="" class="btn btn-light"
+                          ><i class="bi bi-pencil-square"></i
+                        ></a>
+                        <a href="" class="btn btn-light"> Deactivate </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- End Table with hoverable rows -->
               </div>
             </div>
           </div>
         </div>
+      </section>
+    </main>
+    <!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <!-- <footer id="footer" class="footer"></footer> -->
+    <!-- End Footer -->
 
-      </div>
-    </div>
-  </div>
-</body>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    ></a>
 
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
