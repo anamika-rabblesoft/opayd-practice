@@ -237,13 +237,21 @@
     <!-- End Sidebar-->
     <main id="main" class="main">
       <section class="section">
+        <div class="d-flex justify-content-between mb-3">
+            <p class="card-title justify-content-center">Manage Invoice</p>
+            <div class="text-center">
+              <a href="Createinvoice_Listing.html" class="button btn btn-light p-3">
+                <i class="bi bi-receipt p-2"></i>Create Invoice
+              </a>
+            </div>
+          </div>
         <div class="row">
           <div class="col-lg">
             <div class="card">
               <div class="card-body mt-4">
                 <div class="d-flex justify-content-between">
                   <p class="card-title justify-content-center">
-                    Time Sheet Listing
+                    Invoice Listing
                   </p>
                   <div class="search-container">
                     <form action="">
@@ -258,40 +266,29 @@
                           name="end_date"
                           class="ms-2 form-control"
                         />
+                       
+                        <input
+                          type="text"
+                          name=""
+                          class="ms-2 form-control"
+                          placeholder="Enter your Keywords"
+                        />
                         <select
                           name="company_id"
                           class="ms-2 form-control form-select"
                           id=" company_feedback"
                         >
-                          <option value="">Select company</option>
+                          <option value="">Select Status</option>
                           <option value="">Afsar</option>
                         </select>
-                        <select
-                          name="company_id"
-                          class="ms-2 form-control form-select"
-                          id=" company_feedback"
-                        >
-                          <option value="">Select Client</option>
-                          <option value="">Afsar</option>
-                        </select>
-                        <select
-                          name="company_id"
-                          class="ms-2 form-control form-select"
-                          id=" company_feedback"
-                        >
-                          <option value="">Select Employee</option>
-                          <option value="">Afsar</option>
-                        </select>
-                        <a
-                        href="Manage_TimeSheet.HTML"
+                        <a href=""
                           style="background-color: #4b49ac; color: white"
                           type="button "
                           class="ms-2 btn rounded"
-                          
                         >
                           search
                       </a>
-                        <a href="Manage_TimeSheet.HTML"
+                        <a href=""
                           style="background-color: #4b49ac; color: white"
                           class="ms-2 btn rounded"
                           type="button"
@@ -307,30 +304,27 @@
                   <thead>
                     <tr class="text-center">
                       <th scope="col">Sr No.</th>
-                      <th scope="col">Employee</th>
                       <th scope="col">company</th>
                       <th scope="col">Client</th>
+                      <th scope="col">Employee Name</th>
+                      <th scope="col">Duration</th>
+                      <th scope="col">Rate/Hour</th>
+                      <th scope="col">Total Amount</th>
+                      <th scope="col">Status</th>
                       <th scope="col">Date</th>
-                      <th scope="col">Actual In/Out</th>
-                      <th scope="col">Punch In</th>
-                      <th scope="col">Punch Out</th>
-                      <th scope="col">Working Hours</th>
-                      <th scope="col">Break Hours</th>
-                      <th scope="col">Authorized By</th>
                       <th scope="col">Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr class="text-center">
-                      <td >1</td>
+                      <td scope="row">1</td>
                       <td>Brandon Jacob</td>
                       <td>Designer</td>
                       <td>28</td>
                       <td>2016-05-25</td>
                       <td>2016-05-25</td>
                       <td>2016-05-25</td>
-                      <td>2016-05-25</td>
-                      <td>2016-05-25</td>
+                      
                       <td>2016-05-25</td>
                       <td>2016-05-25</td>
                       <td>
@@ -363,7 +357,7 @@
                               </a>
                             </li>
                             <li>
-                              <a class="dropdown-item" href="edit.html">
+                              <a class="dropdown-item" href="Edit_Invoice.html">
                                 <i class=" fas fa-edit me-3"></i>
                                 <span>Edit</span>
                               </a>
@@ -384,7 +378,7 @@
                       </td>
                     </tr>
                     <tr class="text-center">
-                      <td>2</td>
+                      <td scope="row">2</td>
                       <td>Bridie Kessler</td>
                       <td>Developer</td>
                       <td>35</td>
@@ -392,8 +386,7 @@
                       <td>2016-05-25/td></td>
                       <td>2016-05-25</td>
                       <td>2016-05-25</td>
-                      <td>2016-05-25</td>
-                      <td>2016-05-25</td>
+                    
                       <td>2016-05-25</td>
                       <td>
                         <div class="dropdown">
@@ -425,17 +418,17 @@
                               </a>
                             </li>
                             <li>
-                              <a class="dropdown-item" href="pdf.html">
+                              <a class="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
                                 <i class="fas fa-file-pdf me-3"></i>
                                 <span>Pdf</span>
                               </a>
                             </li>
                             <li>
-                              <a
+                              <a href="Edit_Invoice.html"
                                 class="dropdown-item"
-                                data-bs-toggle="modal"
-                                data-bs-target="#exampleModal"
-                                type="button"
+                                 type="button"
                               >
                                 <i class="fas fa-edit me-3"></i>
                                 <span>Edit</span>
@@ -446,7 +439,7 @@
                       </td>
                     </tr>
                     <tr class="text-center">
-                      <td>3</td>
+                      <td scope="row">3</td>
                       <td>Ashleigh Langosh</td>
                       <td>Finance</td>
                       <td>45</td>
@@ -454,8 +447,7 @@
                       <td>2016-05-25</td>
                       <td>2016-05-25</td>
                       <td>2016-05-25</td>
-                      <td>2016-05-25</td>
-                      <td>2016-05-25</td>
+                     
                       <td>2016-05-25</td>
                       <td>
                         <div class="dropdown">
@@ -487,7 +479,9 @@
                               </a>
                             </li>
                             <li>
-                              <a class="dropdown-item" href="pdf.html">
+                              <a class="dropdown-item"
+                              data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" >
                                 <i class="fas fa-file-pdf me-3"></i>
                                 <span>Pdf</span>
                               </a>
@@ -495,8 +489,7 @@
                             <li>
                               <a
                                 class="dropdown-item"
-                                data-bs-toggle="modal"
-                                data-bs-target="#exampleModal"
+                                href="Edit_Invoice.html"
                                 type="button"
                               >
                                 <i class="fas fa-edit me-3"></i>
@@ -508,7 +501,7 @@
                       </td>
                     </tr>
                     <tr class="text-center">
-                      <td>4</td>
+                      <td scope="row">4</td>
                       <td>Angus Grady</td>
                       <td>HR</td>
                       <td>34</td>
@@ -516,8 +509,7 @@
                       <td>2016-05-25</td>
                       <td>2016-05-25</td>
                       <td>2016-05-25</td>
-                      <td>2016-05-25</td>
-                      <td>2016-05-25</td>
+                     
                       <td>2016-05-25</td>
                       <td>
                         <div class="dropdown">
@@ -549,7 +541,8 @@
                               </a>
                             </li>
                             <li>
-                              <a class="dropdown-item" href="pdf.html">
+                              <a class="dropdown-item"  data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
                                 <i class="fas fa-file-pdf me-3"></i>
                                 <span>Pdf</span>
                               </a>
@@ -557,8 +550,7 @@
                             <li>
                               <a
                                 class="dropdown-item"
-                                data-bs-toggle="modal"
-                                data-bs-target="#exampleModal"
+                                href="Edit_Invoice.html"
                                 type="button"
                               >
                                 <i class="fas fa-edit me-3"></i>
@@ -570,13 +562,11 @@
                       </td>
                     </tr>
                     <tr class="text-center">
-                      <td >5</td>
+                      <td scope="row">5</td>
                       <td>Raheem Lehner</td>
                       <td>Dynamic Division Officer</td>
                       <td>47</td>
                       <td>2011-04-19</td>
-                      <td>2016-05-25</td>
-                      <td>2016-05-25</td>
                       <td>2016-05-25</td>
                       <td>2016-05-25</td>
                       <td>2016-05-25</td>
@@ -614,7 +604,7 @@
                               </a>
                             </li>
                             <li>
-                              <a class="dropdown-item" href="pdf.html">
+                              <a class="dropdown-item"       data-bs-toggle="modal" data-bs-target="#exampleModal" >
                                 <i class="fas fa-file-pdf me-3"></i>
                                 <span>Pdf</span>
                               </a>
@@ -622,7 +612,7 @@
                             <li>
                               <a    
                                 class="dropdown-item"
-                                data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                href="Edit_Invoice.html"
                                 type="button"
                               >
                                 <i class="fas fa-edit me-3"></i>
@@ -644,7 +634,6 @@
         </div>
       </section>
     </main>
-
     <!-- End #main -->
     <!-- ======= Footer ======= -->
     <!-- <footer id="footer" class="footer"></footer> -->
@@ -675,26 +664,18 @@
                       <input
                         class="form-control mt-3"
                         type="text"
-                        placeholder="Readonly "
+                        placeholder="Ami Gill "
                         disabled
                       />
                     </div>
+                   
                     <div class="form-group mt-3">
-                      <label for="formGroupExampleInput2">Client:</label>
-                      <input
-                        class="form-control mt-3"
-                        type="text"
-                        placeholder="Readonly "
-                        disabled
-                      />
-                    </div>
-                    <div class="form-group mt-3">
-                      <label for="formGroupExampleInput2">Punch In:</label>
+                      <label for="formGroupExampleInput2">Working Hours:</label>
                       <input
                         type="text"
                         class="form-control w-100 mt-3"
                         id="formGroupExampleInput2"
-                        placeholder=""
+                        placeholder="11:00"
                       />
                     </div>
                   </form>
@@ -702,34 +683,26 @@
                 <div class="col m-3">
                   <form>
                     <div class="form-group mt-3">
-                      <label for="formGroupExampleInput">Company:</label>
+                      <label for="formGroupExampleInput">Client:</label>
                       <input
                         class="form-control mt-3"
                         type="text"
-                        placeholder="Readonly"
+                        placeholder="Kutru"
                         disabled
                       />
                     </div>
                     <div class="form-group mt-3">
                       <label for="formGroupExampleInput2"
-                        >Client Branch:</label
+                        >Hourly Rate</label
                       >
                       <input
                         class="form-control mt-3"
                         type="text"
-                        placeholder="Readonly "
-                        disabled
+                        placeholder="12 "
+                      
                       />
                     </div>
-                    <div class="form-group mt-3">
-                      <label for="formGroupExampleInput2">Punch out:</label>
-                      <input
-                        type="text"
-                        class="form-control w-100 mt-3"
-                        id="formGroupExampleInput2"
-                        placeholder=""
-                      />
-                    </div>
+                    
                   </form>
                 </div>
               </div>
@@ -752,5 +725,4 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
   </body>
-</html>
-
+</html> 

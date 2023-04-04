@@ -190,103 +190,102 @@
     </aside>
     <!-- End Sidebar-->
     <main id="main" class="main">
-      <div class="d-flex justify-content-between mb-3">
-        <p class="card-title justify-content-center">Manage Companies</p>
-        <div class="text-center">
-          <a href="Manage_add.html" class="button btn btn-light p-3">
-            <i class="bi bi-plus-lg p-2"></i>Add New Company
-          </a>
-        </div>
-      </div>
       <section class="section">
         <div class="row">
           <div class="col-lg">
             <div class="card">
               <div class="card-body mt-4">
                 <div class="d-flex justify-content-between">
-                  <p class="card-title justify-content-center">
-                    Company Listing
-                  </p>
-
-                  <div class="search-container">
-                    <form action="">
-                      <div class="d-flex">
+                  <p class="card-title justify-content-center">Edit company</p>
+                  <div class="text-center">
+                    <a
+                      href="Manage_companies.html"
+                      class="button btn btn-light p-2"
+                    >
+                      <i class="bi bi-arrow-left p-2"></i>Back
+                    </a>
+                  </div>
+                </div>
+                <!-- form-select -->
+                <div class="row">
+                  <div class="col">
+                    <form>
+                      <div class="form-group mt-3">
+                        <label for="formGroupExampleInput">Company Name</label>
+                        <input
+                          class="form-control mt-3"
+                          type="text"
+                          placeholder="Readonly "
+                        />
+                      </div>
+                      <div class="form-group mt-3">
+                        <label for="formGroupExampleInput2">Display Name</label>
+                        <input
+                          class="form-control mt-3"
+                          type="text"
+                          placeholder="Readonly "
+                        />
+                      </div>
+                      <div class="form-group mt-3">
+                        <label for="formGroupExampleInput2"
+                          >Address Line 2</label
+                        >
                         <input
                           type="text"
-                          name=""
-                          class="ms-2 form-control"
-                          placeholder="Search"
+                          class="form-control w-100 mt-3"
+                          id="formGroupExampleInput2"
+                          placeholder=""
                         />
-                        <button
-                          style="background-color: #4b49ac; color: white"
-                          type="button "
-                          class="ms-2 btn rounded"
+                      </div>
+                      <div class="form-group mt-3">
+                        <label for="formGroupExampleInput2">Postcode</label>
+                        <input
+                          type="text"
+                          class="form-control w-100 mt-3"
+                          id="formGroupExampleInput2"
+                          placeholder=""
+                        />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col">
+                    <form>
+                      <div class="mt-3">
+                        <label for="formFileMultiple" class="form-label"
+                          >Upload Logo</label
                         >
-                          search
-                        </button>
-                        <button
-                          style="background-color: #4b49ac; color: white"
-                          class="ms-2 btn rounded"
-                          type="button"
+                        <input
+                          class="form-control mt-2"
+                          type="file"
+                          id="formFileMultiple"
+                          multiple
+                        />
+                      </div>
+                      <div class="form-group mt-3">
+                        <label for="formGroupExampleInput2"
+                          >Address Line 1</label
                         >
-                          Reset
-                        </button>
+                        <input
+                          class="form-control mt-3"
+                          type="text"
+                          placeholder="Readonly "
+                        />
+                      </div>
+                      <div class="form-group mt-3">
+                        <label for="formGroupExampleInput2">City/Town</label>
+                        <input
+                          type="text"
+                          class="form-control w-100 mt-3"
+                          id="formGroupExampleInput2"
+                          placeholder=""
+                        />
                       </div>
                     </form>
                   </div>
                 </div>
-                <!-- Table with hoverable rows -->
-                <table class="table table-responsive">
-                  <thead>
-                    <tr class="text-center">
-                      <th>Company Logo</th>
-                      <th scope="col">Company Name</th>
-                      <th scope="col">User</th>
-                      <th scope="col">Address</th>
-                      <th scope="col">City</th>
-                      <th scope="col">Postcode</th>
-                      <th scope="col">Created at</th>
-                      <th scope="col">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="text-center">
-                      <td>1</td>
-                      <td>Brandon Jacob</td>
-                      <td>Designer</td>
-                      <td>28</td>
-                      <td>2016-05-25</td>
-                      <td>2016-05-25</td>
-                      <td>2016-05-25</td>
-
-                      <td>
-                        <a
-                          href="Manage Companies_edit.html"
-                          class="btn btn-light"
-                          ><i class="bi bi-pencil-square"></i
-                        ></a>
-                        <a href="" class="btn btn-light"> Deactivate </a>
-                      </td>
-                    </tr>
-                    <tr class="text-center">
-                      <td>2</td>
-                      <td>Bridie Kessler</td>
-                      <td>Developer</td>
-                      <td>35</td>
-                      <td>2014-12-05</td>
-                      <td>2016-05-25</td>
-                      <td>2016-05-25</td>
-                      <td>
-                        <a
-                          href="Manage Companies_edit.html"
-                          class="btn btn-light"
-                          ><i class="bi bi-pencil-square"></i
-                        ></a>
-                        <a href="" class="btn btn-light"> Deactivate </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <button type="button" class="btn btn-light mt-4 mb-3">
+                  Submit
+                </button>
                 <!-- End Table with hoverable rows -->
               </div>
             </div>
@@ -294,15 +293,7 @@
         </div>
       </section>
     </main>
-    <!-- End #main -->
-    <!-- ======= Footer ======= -->
-    <!-- <footer id="footer" class="footer"></footer> -->
-    <!-- End Footer -->
-
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-    ></a>
+    <!-- End Sidebar-->
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

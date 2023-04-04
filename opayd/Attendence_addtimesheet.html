@@ -235,90 +235,76 @@
       </ul>
     </aside>
     <!-- End Sidebar-->
-
     <main id="main" class="main">
-      <div class="pagetitle">
-        <h1>Welcome Company Admin</h1>
-        <p>All systems are running smoothly!</p>
-        <nav></nav>
-      </div>
-      <!-- End Page Title -->
+        <section class="section">
+            <div class="row">
+                <div class="col-lg">
+                    <div class="card">
+                        <div class="card-body mt-4">
+                            <form action="">
+                                <div class="col-md-12" >
+                                    <label class="" for="">Signature:</label>
+                                    <br/>
+                                    <div id="sig"></div>
+                                    <br/> 
+                                </div>
+                                <div class="col-xl-12 mt-xxl-5">
+                                    <div class="form-group">
+                                        <label for="">Note</label>
+                                        <textarea name="" id="" cols="30" rows="2" class="form-control"></textarea>
 
-      <section class="section profile">
-        <div class="container-fluid">
-         <div class="row">
-           <div class="col-xl-6">
-             <div class="card">
-                 <img src="image (4).png" alt="" class="img-fluid">
-               </div>
-            
-           </div>
-           <div class="col-xl-6">
-             <div class="row">
-               <div class="col-xl-6">
-                 <div class="card">
-                   <div class="card-body Company-color">
-                     <p class="m-2 ">Total Companies</p>
-                     <h1 class="ms-3">1</h1>
-                   </div>
-                 </div>
-                 <div class="card">
-                   <div class="card-body Codes-color">
-                     <p class="m-2">Number of QR Codes</p>
-                     <h1 class="ms-3">2</h1>
-                   </div>
-                 </div>
-                 <div class="card">
-                   <div class="card-body Employee-color">
-                     <p class="m-2">Total Employees</p>
-                     <h1 class="ms-3">3</h1>
-                   </div>
-                 </div>
-               </div>
-               <div class="col-xl-6">
-                 <div class="card">
-                   <div class="card-body Clients-color">
-                     <p class="m-2">Total Clients</p>
-                     <h1 class="ms-3">4</h1>
-                   </div>
-                 </div>
-                 <div class="card">
-                   <div class="card-body Invoice-color">
-                     <p class="m-2">Number of invoice</p>
-                     <h1 class="ms-3">5</h1>
-                   </div>
-                 </div>
-                
-               </div>
-             </div>
-         </div>
- 
- 
-         </div>
-      
-        
-       </section>
- 
+                                    </div>
+                                </div>
+                                <div class="col mt-5 mb-5">
+                                <a href="" class="btn btn-danger">Clear Signature</a>
+                                <a href="" class="btn btn-light"> Generate Timesheet</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Table with hoverable rows -->
+
+                    <!-- End Table with hoverable rows -->
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
     </main>
     <!-- End #main -->
-
     <!-- ======= Footer ======= -->
     <!-- <footer id="footer" class="footer"></footer> -->
     <!-- End Footer -->
 
-   
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"></a>
+
+    <!-- Modal -->
 
     <!-- Vendor JS Files -->
+
+    
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/chart.js/chart.umd.js"></script>
     <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
 
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" ></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-  </body>
+    <script src="assets/js/jquery.signature.js"></script>
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script> -->
+
+    <script >
+        // var sig = $('#sig').signature({syncField: '#signature64', syncFormat: 'PNG'});
+        // $('#clear').click(function(e) {
+        //     e.preventDefault();
+        //     sig.signature('clear');
+        //     $("#signature64").val('');
+        // });
+    </script>
+</body>
+
 </html>
-
-
-      

@@ -236,14 +236,6 @@
     </aside>
     <!-- End Sidebar-->
     <main id="main" class="main">
-      <div class="d-flex justify-content-between mb-3">
-        <p class="card-title justify-content-center">Manage Employee</p>
-        <div class="text-center">
-          <a href="employee_add.html" class="button btn btn-light p-3">
-            <i class="bi bi-plus-lg p-2"></i>Add New Employee
-          </a>
-        </div>
-      </div>
       <section class="section">
         <div class="row">
           <div class="col-lg">
@@ -251,18 +243,18 @@
               <div class="card-body mt-4">
                 <div class="d-flex justify-content-between">
                   <p class="card-title justify-content-center">
-                    Employee Listing
+                    Employees Attendence Listing
                   </p>
-
                   <div class="search-container">
                     <form action="">
                       <div class="d-flex">
                         <input
-                          type="text"
-                          name=""
-                          class="ms-2 form-control"
-                          placeholder="Search"
+                          type="date"
+                          name="start_date"
+                          class="form-control"
                         />
+                        <input type="text" name="" class="form-control ms-2"   >
+                        
                         <button
                           style="background-color: #4b49ac; color: white"
                           type="button "
@@ -277,6 +269,7 @@
                         >
                           Reset
                         </button>
+                        <a class="btn btn-light  btn-block ms-2 w-100" href="Add_Attendence.html">Add Attendence</a>  
                       </div>
                     </form>
                   </div>
@@ -285,95 +278,81 @@
                 <table class="table table-responsive">
                   <thead>
                     <tr class="text-center">
-                      <th scope="col">Image</th>
-                      <th scope="col">Name</th>
-                      <th scope="col">Company Name</th>
-                      <th scope="col">NI Number</th>
-                      <th scope="col">PayRoll/Roll N.</th>
-                      <th scope="col">Availability Status</th>
-                      <th scope="col">Created at</th>
+
+                      <th scope="col">Company</th>
+                      <th scope="col">Client</th>
+                      <th scope="col">Employee</th>
+                      <th scope="col">Actual In/Out</th>
+                      <th scope="col">Check In</th>
+                      <th scope="col">Check Out</th>
+                      <th scope="col">Break Hours</th>
+                      <th scope="col">Working Hours</th>
+                      <th scope="col">Shift</th>
                       <th scope="col">Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr class="text-center">
-                      <td scope="row">
-                        <img
-                          class="rounded-circle"
-                          src="profile-img.jpg"
-                          height="35"
-                        />
-                      </td>
+                      <td scope="row">1</td>
                       <td>Brandon Jacob</td>
                       <td>Designer</td>
                       <td>28</td>
                       <td>2016-05-25</td>
                       <td>2016-05-25</td>
                       <td>2016-05-25</td>
-
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      
                       <td>
-                        <a href="Employee_edit .html" class="btn btn-primary"
-                          ><i class="bi bi-pencil-square"></i
-                        ></a>
-                        <a href="" class="btn btn btn-danger"
-                          ><i class="bi bi-trash"></i
-                        ></a>
-                        <a
-                          href=""
-                          type=""
-                          class="btn btn-light"
-                          data-bs-toggle="modal"
-                          data-bs-target="#exampleModal"
-                          ><i class="fas fa-user-lock"></i
-                        ></a>
-                        <a href="Employee_Listing.html" class="btn btn-primary"
-                          ><i class="bi bi-list"></i
-                        ></a>
+                        <a class="btn btn-light" href="Attendence_Listing.html">
+                            <i class="bi-list"></i> 
                       </td>
                     </tr>
                     <tr class="text-center">
-                      <td scope="row">
-                        <img
-                          class="rounded-circle"
-                          src="profile-img.jpg"
-                          height="35"
-                        />
-                      </td>
+                      <td scope="row">2</td>
                       <td>Bridie Kessler</td>
                       <td>Developer</td>
                       <td>35</td>
                       <td>2014-12-05</td>
+                      <td>2016-05-25/td></td>
                       <td>2016-05-25</td>
                       <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                    
                       <td>
-                        <a href="Employee_edit .html" class="btn btn-primary"
-                          ><i class="bi bi-pencil-square"></i
-                        ></a>
-                        <a href="" class="btn btn btn-danger delete-btn"
-                          ><i class="bi bi-trash"></i
-                        ></a>
-                        <a
-                          href=""
-                          class="btn btn-light"
-                          data-bs-toggle="modal"
-                          data-bs-target="#exampleModal"
-                          ><i class="fas fa-user-lock"></i
-                        ></a>
-                        <a href="Employee_Listing.html" class="btn btn-primary"
-                          ><i class="bi bi-list"></i
-                        ></a>
+                        <a class="btn btn-light" href="Attendence_Listing.html">
+                            <i class="bi-list"></i> 
                       </td>
                     </tr>
+                    <tr class="text-center">
+                      <td scope="row">3</td>
+                      <td>Ashleigh Langosh</td>
+                      <td>Finance</td>
+                      <td>45</td>
+                      <td>2011-08-12</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                      <td>2016-05-25</td>
+                     
+                      <td>
+                        <a class="btn btn-light" href="Attendence_Listing.html">
+                            <i class="bi-list "></i> 
+                      </td>
+                    </tr>
+                    
+                    
                   </tbody>
                 </table>
                 <!-- End Table with hoverable rows -->
+
+
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-
     <!-- End #main -->
     <!-- ======= Footer ======= -->
     <!-- <footer id="footer" class="footer"></footer> -->
@@ -383,53 +362,94 @@
       href="#"
       class="back-to-top d-flex align-items-center justify-content-center"
     ></a>
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5 ms-3 mt-3" id="exampleModalLabel">
-              Change Password
-            </h1>
 
-            <button
-              type="button"
-              class="btn-close mt-3 me-3"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
+                <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 ms-3 mt-3" id="exampleModalLabel">Timesheet</h1>
+
+          
+
+          <button type="button" class="btn-close mt-3 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
             <div class="row">
-              <div class="col ">
-                <form>
-                  <div class="form-group mt-3">
-                    <input
-                      class="form-control mt-3"
-                      type="text"
-                      placeholder="Enter your Password"
-                    />
-                  </div>
+                <div class="col m-3">
+                  <form>
+                    <div class="form-group mt-3">
+                      <label for="formGroupExampleInput">Employee Name:</label>
+                      <input
+                        class="form-control mt-3"
+                        type="text"
+                        placeholder="Readonly "
+                        disabled
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="formGroupExampleInput2">Client:</label>
+                      <input
+                        class="form-control mt-3"
+                        type="text"
+                        placeholder="Readonly "
+                        disabled
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="formGroupExampleInput2">Punch In:</label>
+                      <input
+                        type="text"
+                        class="form-control w-100 mt-3"
+                        id="formGroupExampleInput2"
+                        placeholder=""
+                      />
+                    </div>
+                  </form>
+                </div>
+                <div class="col m-3">
+                  <form>
+                    <div class="form-group mt-3">
+                      <label for="formGroupExampleInput">Company:</label>
+                      <input
+                        class="form-control mt-3"
+                        type="text"
+                        placeholder="Readonly"
+                        disabled
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="formGroupExampleInput2"
+                        >Client Branch:</label
+                      >
+                      <input
+                        class="form-control mt-3"
+                        type="text"
+                        placeholder="Readonly "
+                        disabled
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="formGroupExampleInput2">Punch out:</label>
+                      <input
+                        type="text"
+                        class="form-control w-100 mt-3"
+                        id="formGroupExampleInput2"
+                        placeholder=""
+                      />
+                    </div>
+                  </form>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-light   m-3"
-              data-bs-dismiss="modal"
-            >
-            Change Password
-            </button>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary m-3" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success  m-3">Print</button>
         </div>
       </div>
     </div>
+  </div>
+
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/chart.js/chart.umd.js"></script>
@@ -440,4 +460,4 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
   </body>
-</html>
+</html>                                         

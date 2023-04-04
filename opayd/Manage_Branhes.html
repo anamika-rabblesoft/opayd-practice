@@ -235,78 +235,89 @@
       </ul>
     </aside>
     <!-- End Sidebar-->
-
+    <!-- End Sidebar-->
     <main id="main" class="main">
-      <div class="pagetitle">
-        <h1>Welcome Company Admin</h1>
-        <p>All systems are running smoothly!</p>
-        <nav></nav>
-      </div>
-      <!-- End Page Title -->
-
-      <section class="section profile">
-        <div class="container-fluid">
-         <div class="row">
-           <div class="col-xl-6">
-             <div class="card">
-                 <img src="image (4).png" alt="" class="img-fluid">
-               </div>
-            
-           </div>
-           <div class="col-xl-6">
-             <div class="row">
-               <div class="col-xl-6">
-                 <div class="card">
-                   <div class="card-body Company-color">
-                     <p class="m-2 ">Total Companies</p>
-                     <h1 class="ms-3">1</h1>
-                   </div>
-                 </div>
-                 <div class="card">
-                   <div class="card-body Codes-color">
-                     <p class="m-2">Number of QR Codes</p>
-                     <h1 class="ms-3">2</h1>
-                   </div>
-                 </div>
-                 <div class="card">
-                   <div class="card-body Employee-color">
-                     <p class="m-2">Total Employees</p>
-                     <h1 class="ms-3">3</h1>
-                   </div>
-                 </div>
-               </div>
-               <div class="col-xl-6">
-                 <div class="card">
-                   <div class="card-body Clients-color">
-                     <p class="m-2">Total Clients</p>
-                     <h1 class="ms-3">4</h1>
-                   </div>
-                 </div>
-                 <div class="card">
-                   <div class="card-body Invoice-color">
-                     <p class="m-2">Number of invoice</p>
-                     <h1 class="ms-3">5</h1>
-                   </div>
-                 </div>
-                
-               </div>
-             </div>
-         </div>
- 
- 
-         </div>
-      
-        
-       </section>
- 
+      <section class="section">
+        <div class="row">
+          <div class="col-lg">
+            <div class="card">
+              <div class="card-body mt-4">
+                <div class="d-flex justify-content-between">
+                  <p class="card-title justify-content-center">
+                    Client Branches Listing
+                  </p>
+                  <div class="search-container">
+                    <form action="">
+                      <div class="d-flex">
+                        <a href="add_branches.html" class="button btn btn-light p-2 me-3">
+                        </i>Add Branches
+                          </a>
+                          <a href="Manage_Clients.html" class="button btn btn-light p-2"> <i class="bi bi-arrow-left me-2"></i>  
+                        Back
+                          </a>
+                       
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- Table with hoverable rows -->
+                <table class="table table-responsive table-borderless">
+                  <thead>
+                    <tr class="text-center">
+                      <th>Client</th>
+                      <th>Branch</th>
+                      <th>Address</th>
+                      <th>Post Code</th>
+                      <th>Created At</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center" colspan="6">No Record Found</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- End Table with hoverable rows -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- End #main -->
-
     <!-- ======= Footer ======= -->
     <!-- <footer id="footer" class="footer"></footer> -->
     <!-- End Footer -->
 
-   
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    ></a>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 ms-3 mt-3" id="exampleModalLabel">
+              Timesheet
+            </h1>
+
+            <button
+              type="button"
+              class="btn-close mt-3 me-3"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+         
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -319,6 +330,3 @@
     <script src="assets/js/main.js"></script>
   </body>
 </html>
-
-
-      
