@@ -187,6 +187,90 @@
     <!-- End Sidebar-->
     <main id="main" class="main">
       <section class="section">
+        <div class="card mt-5">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mt-4 me-3">
+            <p>Employee Listing</p>
+            <div class="search">
+              <form action="">
+                <div class="d-flex ms-lg-5">
+                  <input
+                    type="date"
+                    name="start_date"
+                    class="form-control"
+                  />
+                  <input
+                    type="date"
+                    name="end_date"
+                    class="ms-2 form-control"
+                  />
+                  
+                  <a
+                  href="Manage_TimeSheet.HTML"
+                    style="background-color: #4b49ac; color: white"
+                    type="button "
+                    class="ms-2 btn rounded"
+                    
+                  >
+                    search
+                </a>
+                  <a href="Manage_TimeSheet.HTML"
+                    style="background-color: #4b49ac; color: white"
+                    class="ms-2 btn rounded"
+                    type="button"
+                  >
+                    Reset
+              </a>
+                </div>
+              </form>
+            </div>
+      </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+          <div class="table-responsive mt-3 table-borderless">
+              <table class="table table-borderless ">
+                  <thead>
+                    <tr>
+                      <th class="text-center" colspan="4">Employee Name</th>
+                      <th class="text-center" colspan="4">Employee Email</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center" colspan="4">abc</td>
+                      <td class="text-center" colspan="4">annu123@gmail.com</td>
+                    </tr>
+                   
+                  </tbody>
+                  <thead>
+                    <tr class="text-center">
+                      <th >#</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Check In/Out</th>
+                      <th scope="col">Working Hours</th>
+                      <th scope="col">Break Hours</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="text-center">
+                      <td>1</td>
+                      <td>2023-03-6</td>
+                      <td>8:00/2:00</td>
+                      <td>8:00/2:00</td>
+                      <td>8:00/2:00</td>
+                      <td> <a href="" class="btn btn-light">Add Timesheet</a>  </td>
+
+                    </tr>
+                  </tbody>
+              </table>
+            </div>
+       
+                  </div>
+                </div>
+      </section>
+      <!-- <section class="section">
         <div class="row">
           <div class="col-lg">
             <div class="card">
@@ -226,7 +310,7 @@
                     </form>
                   </div>
                 </div>
-                <!-- Table with hoverable rows -->
+                <!-- Table with hoverable rows
                 <table class="table table-responsive table-borderless">
                   <thead>
                     <tr>
@@ -270,113 +354,6 @@
     <!-- ======= Footer ======= -->
     <!-- <footer id="footer" class="footer"></footer> -->
     <!-- End Footer -->
-
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-    ></a>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5 ms-3 mt-3" id="exampleModalLabel">
-              Timesheet
-            </h1>
-
-            <button
-              type="button"
-              class="btn-close mt-3 me-3"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col m-3">
-                <form>
-                  <div class="form-group mt-3">
-                    <label for="formGroupExampleInput">Employee Name:</label>
-                    <input
-                      class="form-control mt-3"
-                      type="text"
-                      placeholder="Readonly "
-                      disabled
-                    />
-                  </div>
-                  <div class="form-group mt-3">
-                    <label for="formGroupExampleInput2">Client:</label>
-                    <input
-                      class="form-control mt-3"
-                      type="text"
-                      placeholder="Readonly "
-                      disabled
-                    />
-                  </div>
-                  <div class="form-group mt-3">
-                    <label for="formGroupExampleInput2">Punch In:</label>
-                    <input
-                      type="text"
-                      class="form-control w-100 mt-3"
-                      id="formGroupExampleInput2"
-                      placeholder=""
-                    />
-                  </div>
-                </form>
-              </div>
-              <div class="col m-3">
-                <form>
-                  <div class="form-group mt-3">
-                    <label for="formGroupExampleInput">Company:</label>
-                    <input
-                      class="form-control mt-3"
-                      type="text"
-                      placeholder="Readonly"
-                      disabled
-                    />
-                  </div>
-                  <div class="form-group mt-3">
-                    <label for="formGroupExampleInput2">Client Branch:</label>
-                    <input
-                      class="form-control mt-3"
-                      type="text"
-                      placeholder="Readonly "
-                      disabled
-                    />
-                  </div>
-                  <div class="form-group mt-3">
-                    <label for="formGroupExampleInput2">Punch out:</label>
-                    <input
-                      type="text"
-                      class="form-control w-100 mt-3"
-                      id="formGroupExampleInput2"
-                      placeholder=""
-                    />
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary m-3"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-success m-3">Print</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

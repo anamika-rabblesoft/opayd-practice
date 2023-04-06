@@ -233,45 +233,48 @@
     <!-- End Sidebar-->
     <main id="main" class="main">
       <section class="section">
-        <div class="card">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-center mt-4 me-3">
-              <p>Employee Listing</p>
-              <div class="form">
-                <div class="row">
-                    <div class="col ms-2">
-                        <div class="input-group mb-3">
-                           <input type="text" class="form-control " placeholder="Enter Your Keyword"> 
-                           <a href="" class="form-control btn btn-light rounded-end "> Search</a>
-                           <div class="col">
-                            <a href="" class="form-control btn btn-light rounded-end ms-3"> Submit</a>
-                    </div>  
-                
-             </div>
-              </form>
-            </div>
+        <div class="card mt-5">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mt-4 me-3">
+            <p>Company Listing</p>
+            <div class="form">
+              <div class="row">
+                  <div class="col ">
+                     <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="search">
+                     <div class="input-group-btn">
+                     <button class="btn btn-light rounded-0 rounded-end" type="submit">Search</button>
+                    </div>
+                  <div class="col">
+                          <a href="" class="form-control btn btn-light rounded-end ms-3"> Submit</a>
+                  </div>  
+             
+           </div>
+            </form>
           </div>
         </div>
-            </div>
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr class="text-center">
-                          <th scope="col">Company</th>
-                          <th scope="col">Client</th>
-                          <th scope="col">Employee</th>
-                          <th scope="col">Actual In/Out</th>
-                          <th scope="col">Check In</th>
-                          <th scope="col">Check Out</th>
-                          <th scope="col">Break Hours</th>
-                          <th scope="col">Working Hours</th>
-                          <th scope="col">Shift</th>
-                          <th scope="col">Action</th>
+      </div>
+          </div>
+          <div class="table-responsive mt-3">
+              <table class="table">
+                  <thead>
+                      <tr class="text-center">
+                        <th scope="col">Company</th>
+                        <th scope="col">Client</th>
+                        <th scope="col">Employee</th>
+                        <th scope="col">Actual In/Out</th>
+                        <th scope="col">Check In</th>
+                        <th scope="col">Check Out</th>
+                        <th scope="col">Break Hours</th>
+                        <th scope="col">Working Hours</th>
+                        <th scope="col">Shift</th>
+                        <th scope="col">Action</th>
+ 
                       </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="text-center">
-                          <td scope="row">1</td>
+                  </thead>
+                  <tbody>
+                      <tr class="text-center">
+                        <td scope="row">1</td>
                           <td>Brandon Jacob</td>
                           <td>Designer</td>
                           <td>28</td>
@@ -285,9 +288,9 @@
                             <a class="btn btn-light" href="Attendence_Listing.html">
                                 <i class="bi-list"></i> 
                           </td>
-                          </tr>
-                          <tr class="text-center">
-                            <td scope="row">2</td>
+                        </tr>
+                        <tr class="text-center">
+                          <td scope="row">2</td>
                             <td>Bridie Kessler</td>
                             <td>Developer</td>
                             <td>35</td>
@@ -301,132 +304,17 @@
                               <a class="btn btn-light" href="Attendence_Listing.html">
                                   <i class="bi-list"></i> 
                             </td>
-    
-                        </tr>
-                        
-                    </tbody>
-                </table>
-              </div>
-         
-                    </div>
-                  </div>
-        <!-- <div class="container-fluid bg-white shadow-sm rounded">
-          <div class="row">
-            <div class="table-responsive">
-          <div class="col-lg">
-            
-              <div class="card-body mt-4">
-                <div class="d-flex justify-content-between">
-                  <p class="card-title justify-content-center">
-                    Employees Attendence Listing
-                  </p>
-                  <div class="search-container">
-                    <form action="">
-                      <div class="d-flex">
-                        <input
-                          type="date"
-                          name="start_date"
-                          class="form-control"
-                        />
-                        <input type="text" name="" class="form-control ms-2"   >
-                        
-                        <a href=""
-                          style="background-color: #4b49ac; color: white"
-                          type="button "
-                          class="ms-2 btn rounded"
-                        >
-                          search
-                      </a>
-                        <a href=""
-                          style="background-color: #4b49ac; color: white"
-                          class="ms-2 btn rounded"
-                          type="button"
-                        >
-                          Reset
-                      </a>
-                        <a class="btn btn-light  btn-block ms-2 w-100" href="Add_Attendence.html">Add Attendence</a>  
-                      </div>
-                    </form>
+ 
+                      </tr>
+                      
+                  </tbody>
+              </table>
+            </div>
+       
                   </div>
                 </div>
-                <!-- Table with hoverable rows 
-                <table class="table table-responsive">
-                  <thead>
-                    <tr class="text-center">
-
-                      <th scope="col">Company</th>
-                      <th scope="col">Client</th>
-                      <th scope="col">Employee</th>
-                      <th scope="col">Actual In/Out</th>
-                      <th scope="col">Check In</th>
-                      <th scope="col">Check Out</th>
-                      <th scope="col">Break Hours</th>
-                      <th scope="col">Working Hours</th>
-                      <th scope="col">Shift</th>
-                      <th scope="col">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="text-center">
-                      <td scope="row">1</td>
-                      <td>Brandon Jacob</td>
-                      <td>Designer</td>
-                      <td>28</td>
-                      <td>2016-05-25</td>
-                      <td>2016-05-25</td>
-                      <td>2016-05-25</td>
-                      <td>2016-05-25</td>
-                      <td>2016-05-25</td>
-                      
-                      <td>
-                        <a class="btn btn-light" href="Attendence_Listing.html">
-                            <i class="bi-list"></i> 
-                      </td>
-                    </tr>
-                    <tr class="text-center">
-                      <td scope="row">2</td>
-                      <td>Bridie Kessler</td>
-                      <td>Developer</td>
-                      <td>35</td>
-                      <td>2014-12-05</td>
-                      <td>2016-05-25/td></td>
-                      <td>2016-05-25</td>
-                      <td>2016-05-25</td>
-                      <td>2016-05-25</td>
-                    
-                      <td>
-                        <a class="btn btn-light" href="Attendence_Listing.html">
-                            <i class="bi-list"></i> 
-                      </td>
-                    </tr>
-                    <tr class="text-center">
-                      <td scope="row">3</td>
-                      <td>Ashleigh Langosh</td>
-                      <td>Finance</td>
-                      <td>45</td>
-                      <td>2011-08-12</td>
-                      <td>2016-05-25</td>
-                      <td>2016-05-25</td>
-                      <td>2016-05-25</td>
-                      <td>2016-05-25</td>
-                     
-                      <td>
-                        <a class="btn btn-light" href="Attendence_Listing.html">
-                            <i class="bi-list "></i> 
-                      </td>
-                    </tr>
-                    
-                    
-                  </tbody>
-                </table>
-                <!-- End Table with hoverable rows -->
-
-
-              </div>
-            </div>
-          </div>
-        </div> -->
       </section>
+     
     </main>
     <!-- End #main -->
     <!-- ======= Footer ======= -->
