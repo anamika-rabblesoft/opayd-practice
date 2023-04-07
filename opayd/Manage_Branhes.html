@@ -238,82 +238,71 @@
           <div class="col-lg">
             <div class="card">
               <div class="card-body mt-4">
-                <div class="d-flex justify-content-between">
-                  <p class="card-title justify-content-center">
-                    Client Branches Listing
-                  </p>
-                  <div class="search-container">
-                    <form action="">
-                      <div class="d-flex">
-                        <a href="add_branches.html" class="button btn btn-light p-2 me-3">
-                        </i>Add Branches
-                          </a>
-                          <a href="Manage_Clients.html" class="button btn btn-light p-2"> <i class="bi bi-arrow-left me-2"></i>  
-                        Back
-                          </a>
-                       
+                <div class="row">
+                  <div class="col-12">
+                    <div
+                      class="page_title_box d-flex flex-wrap align-items-center justify-content-between"
+                    >
+                      <div class="page_title_left">
+                        <p class="card-title mt-2">Client Branches Listing</p>
                       </div>
-                    </form>
+                      <div class="page_title_right d-flex me-3">
+                        <div class="">
+                          
+                            <a
+                              href="add_branches.html"
+                              class="btn btn-light"
+                              type="submit"
+                              >Add New Unit</a
+                            >
+                          </div>
+                          <div class=" ">
+                            <a
+                              href="Manage_Clients.html"
+                              class="form-control btn btn-light rounded-end ms-3"
+                              ><i class="bi bi-arrow-left me-2"></i> Back</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+
+                <!-- Table with hoverable rows -->
+                <div class="row">
+                  <div class="col-12">
+                    <div class="table-responsive mt-3 table-borderless">
+                      <table class="table table-borderless">
+                        <thead>
+                          <tr class="text-center">
+                            <th>Client</th>
+                            <th>Unit</th>
+                            <th>Address</th>
+                            <th>Created At</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center" colspan="6">
+                              No Record Found
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
-                <!-- Table with hoverable rows -->
-                <table class="table table-responsive table-borderless">
-                  <thead>
-                    <tr class="text-center">
-                      <th>Client</th>
-                      <th>Branch</th>
-                      <th>Address</th>
-                      <th>Post Code</th>
-                      <th>Created At</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="text-center" colspan="6">No Record Found</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <!-- End Table with hoverable rows -->
               </div>
             </div>
           </div>
         </div>
       </section>
-    </main>
-    <!-- End #main -->
-    <!-- ======= Footer ======= -->
-    <!-- <footer id="footer" class="footer"></footer> -->
-    <!-- End Footer -->
+      
+     
 
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-    ></a>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5 ms-3 mt-3" id="exampleModalLabel">
-              Timesheet
-            </h1>
-
-            <button
-              type="button"
-              class="btn-close mt-3 me-3"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-         
+    
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -16,6 +16,11 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
     />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
     <!-- Vendor CSS Files -->
     <link
@@ -185,114 +190,89 @@
     </aside>
     <!-- End Sidebar-->
     <main id="main" class="main">
-      <div class="row mb-3">
-        <div class="col-12">
-          <div
-            class="page_title_box d-flex flex-wrap align-items-center justify-content-between"
-          >
-            <div class="page_title_left">
-              <p class="card-title mt-2">Manage Unit</p>
-            </div>
-            <div class="page_title_right d-flex me-3">
-              <div class="input-group">
-                <div class="input-group-btn">
-                  <a
-                    href="add new_unit.html"
-                    class="btn btn-light"
-                    type="submit"
-                    >Add New Unit</a
-                  >
-                </div>
-                <div class=" ">
-                  <a
-                    href="Manage_Clients.html"
-                    class="form-control btn btn-light rounded-end ms-3"
-                    ><i class="bi bi-arrow-left me-2"></i> Back</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <section class="section">
         <div class="row">
           <div class="col-lg">
             <div class="card">
               <div class="card-body mt-4">
+                <!-- form-select -->
                 <div class="row">
                   <div class="col-12">
                     <div
                       class="page_title_box d-flex flex-wrap align-items-center justify-content-between"
                     >
                       <div class="page_title_left">
-                        <p class="card-title mt-2">Client Unit Listing</p>
+                        <p class="card-title mt-3">Edit Timesheet</p>
                       </div>
-                      <div class="page_title_right d-flex me-3">
-                        <div class="input-group">
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Search"
-                            name="search"
-                          />
-                          <div class="input-group-btn">
-                            <button
-                              class="btn btn-light rounded-0 rounded-end"
-                              type="submit"
-                            >
-                              Search
-                            </button>
-                          </div>
-                          <div class=" ">
-                            <a
-                              href=""
-                              class="form-control btn btn-light rounded-end ms-3"
-                            >
-                              Submit</a
-                            >
-                          </div>
+                      <div class="page_title_right d-flex flex-wrap">
+                        <div class="me-1">
+                          <a href="Manage_TimeSheet.HTML" class="button btn btn-light p-2">
+                            <i class="bi bi-receipt p-2"></i>TimeSheet Listing
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- Table with hoverable rows -->
+        
+              <form action="">
                 <div class="row">
-                  <div class="col-12">
-                    <div class="table-responsive mt-3 table-borderless">
-                      <table class="table table-borderless">
-                        <thead>
-                          <tr class="text-center">
-                            <th>Client</th>
-                            <th>Unit</th>
-                            <th>Address</th>
-                            <th>Created At</th>
-                            <th>Action</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="text-center" colspan="6">
-                              No Record Found
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                  <div class="col-md-6">
+                    <div class="form-group mt-3">
+                      <label for="formGroupExampleInput">Punch In</label>
+                      <input
+                        class="form-control mt-3"
+                        type="text"
+                        placeholder=" "
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="formGroupExampleInput2">Break Hours</label>
+                      <input
+                        class="form-control mt-3"
+                        type="text"
+                        placeholder=""
+                      />
                     </div>
                   </div>
+                  <div class="col-md-6">
+                    <div class="form-group mt-3">
+                      <label for="formGroupExampleInput2">Punch Out</label>
+                      <input
+                        class="form-control mt-3"
+                        type="text"
+                        placeholder=""
+                      />
+                    </div>
+
+                    <div class="form-group mt-3">
+                      <label for="formGroupExampleInput2">Change Unit</label>
+                      <select
+                        name="company_id"
+                        class="form-control form-select mt-3"
+                        id=" company_feedback"
+                      >
+                        <option value="">Select Status</option>
+                        <option value="">Afsar</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <button type="button" class="btn btn-light mt-4 mb-3">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                  <!-- End Table with hoverable rows -->
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <!-- End #main -->
-    <!-- ======= Footer ======= -->
-    <!-- <footer id="footer" class="footer"></footer> -->
-    <!-- End Footer -->
+    <!-- End Sidebar-->
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
